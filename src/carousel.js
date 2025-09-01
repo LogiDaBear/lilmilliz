@@ -24,7 +24,7 @@ export class Carousel {
     // Lazy background via data-src (optional)
     this.slides.forEach(slide => {
       const src = slide.dataset.src;
-      if (src) slide.style.setProperty("--bg", `url("${src}")`);
+      if (src) slide.style.setProperty("--bg-image", `url("${src}")`);
     });
 
     this.bind();

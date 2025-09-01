@@ -1,5 +1,5 @@
 import { Carousel } from "./carousel.js";
-import { initNav, initInquiryForm } from "./App.js";
+import { initNav, initInquiryForm, initGlitterClicks } from "./App.js";
 
 document.addEventListener("DOMContentLoaded", () => {
   initNav();
@@ -7,7 +7,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const carouselRoot = document.querySelector(".carousel");
   if (carouselRoot) {
-    // You can pass { interval: 7000 } to adjust autoplay speed
     new Carousel(carouselRoot, { interval: 6000 });
   }
+
+  // activate glitter pops on buttons
+  initGlitterClicks();
 });
